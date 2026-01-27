@@ -1,5 +1,7 @@
 import { Button } from "../components/Button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+
 const navLinks=[
    {href:"#About",label:"About"},
    {href:"#projects",label:"Projects"},
@@ -8,7 +10,19 @@ const navLinks=[
      
 ]
 export function Navbar(){
+const [isMobileMenuOpen,setIsMobileMenuOpen]=useState(false);
 
+function onClickHandler(){
+setIsMobileMenuOpen((prev)=>{
+   if(prev===false){
+      prev=true;
+   }
+   else{
+      prev=false;
+   }
+   return prev;
+})
+}
    return(
     <header className="fixed top-0 left-0 right-0 bg-transparent py-5 ">
 <nav className="container mx-auto flex  px-6 md:flex-row  justify-between items-center ">
@@ -34,14 +48,29 @@ export function Navbar(){
 
 {/* Mobile Menu Button */}
 
-<button className="md:hidden flex p-2 text-foreground cursor-pointer">
-<Menu size={24}/>
+<button className="md:hidden flex p-2 text-foreground cursor-pointer" onClick={onClickHandler}>
+{isMobileMenuOpen ? <X/> : <Menu size={24}/>}
 </button>
 
 </nav>
 
+{/* Mobile Menu */}
 
+{isMobileMenuOpen && <div className="md:hidden glass-strong animate-fade-in ">
 
+<div className="container mx-auto  flex items-center justify-center flex-col p-6 space-y-4 transition-all  ">
+{navLinks.map((link,index)=>{
+   return <a href={link.href} key={index} className=" text-center text-lg text-bold text-zinc-300
+    hover:text-foreground  hover:bg-zinc-600 w-full py-2">
+      {link.label}
+      </a>
+})}
+
+<Button size="default" className="cursor-pointer w-full">Contact Me</Button>
+</div>
+
+</div>
+}
 
 </header>
    ) ;
