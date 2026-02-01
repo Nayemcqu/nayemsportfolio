@@ -1,6 +1,6 @@
 import { Button } from "../components/Button";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { HouseWifiIcon, Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const navLinks=[
    {href:"#About",label:"About"},
@@ -11,6 +11,18 @@ const navLinks=[
 ]
 export function Navbar(){
 const [isMobileMenuOpen,setIsMobileMenuOpen]=useState(false);
+const [isScrolled,setIsScrolled]=useState(false);
+
+useEffect(()=>{
+const handleScroll=()=>{
+   setIsScrolled(window.scrollY>50);
+}   
+
+window.addEventListener('scroll',handleScroll);
+
+return ()=> window.removeEventListener('scroll',handleScroll);
+
+},[])
 
 function onClickHandler(){
 setIsMobileMenuOpen((prev)=>{
@@ -24,8 +36,9 @@ setIsMobileMenuOpen((prev)=>{
 })
 }
    return(
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5 ">
-<nav className="container mx-auto flex  px-6 md:flex-row  justify-between items-center ">
+    <header className={`fixed top-0 left-0 right-0
+     ${isScrolled ? "glass-strong py-3":"bg-transparent py-5"} z-50 transition-all duration-500`} >
+<nav className="container  mx-auto flex  px-6 md:flex-row  justify-between items-center ">
 <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
    Portfolio<span className="text-primary">.</span>
 </a>
@@ -60,13 +73,17 @@ setIsMobileMenuOpen((prev)=>{
 
 <div className="container mx-auto  flex items-center justify-center flex-col p-6 space-y-4 transition-all  ">
 {navLinks.map((link,index)=>{
-   return <a href={link.href} key={index} className=" text-center text-lg text-bold text-zinc-300
+   return <a 
+   href={link.href}
+    key={index}
+    onClick={()=>setIsMobileMenuOpen(false)}
+    className=" text-center text-lg text-bold text-zinc-300
     hover:text-foreground  hover:bg-zinc-600 w-full py-2">
       {link.label}
       </a>
 })}
 
-<Button size="default" className="cursor-pointer w-full">Contact Me</Button>
+<Button size="default"  onClick={()=>setIsMobileMenuOpen(false)} className="cursor-pointer w-full">Contact Me</Button>
 </div>
 
 </div>
