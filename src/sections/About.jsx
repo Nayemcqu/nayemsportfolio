@@ -39,7 +39,8 @@ const highlights=[
     
 <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase"> About Me</span>
 </div>
-<h2 className="text-4xl md:text-5xl font-bold animate-fade-in animation-delay-100 text-secondary-foreground leading-tight">Building the future,
+<h2 className="text-4xl md:text-5xl font-bold animate-fade-in animation-delay-100 text-secondary-foreground leading-tight">
+    Building the future,
     <span className="text-foreground font-serif italic font-normal ">one component at a time.</span>
 </h2>
 <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
@@ -73,10 +74,10 @@ const highlights=[
 </div>
 
 {/* Right column */}
-<div className="grid sm:grid-cols-2 gap-6">
+<div className="grid md:grid-cols-2 gap-6">
 {highlights.map((item,indx)=>(
-    <div key={indx} className="glass p-6 rounded-2xl group animate-fade-in " 
-    style={{animationDelay:`${(indx+1)*100} ms`}}>
+    <div key={indx} className="glass p-6 rounded-2xl group animate-fade-in space-y-1" 
+    style={{animationDelay:`${(indx+1)*100} ms` }}>
         <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20">
  <item.icon className="w-6 h-6 text-primary"/> 
         </div>
