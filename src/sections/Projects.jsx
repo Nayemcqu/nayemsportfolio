@@ -103,10 +103,14 @@ style={{
 
 ))}
 
+</div >
+{/* view all CTA */}
+<div className="flex justify-center mt-12 animate-fade-in animation-delay-500">
+<button className="flex gap-2 border rounded-full border-green-300 py-4 px-4 cursor-pointer text-xl text-foreground 
+hover:bg-primary/50 hover:text-primary-foreground  transition-all">
+View All Projects <ArrowUpRight className="ml-2"/>    
+</button>
 </div>
-
-
-
       </div>
 
 
