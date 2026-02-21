@@ -2,22 +2,22 @@ import { ArrowUpRight, Github } from "lucide-react";
 
 export function Projects(){
 const projects=[{
-     title: "Fintech Dashboard",
+     title: "Amazon Clone",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+      "A Clone of The Amazon Website.Which shows Product List, Cart,Checkout and the HomePage.",
+    image: "/projects/Project1.JPG",
+    tags: ["React", "JavaScript", "Redux","Axios","React Router"],
+    link: "https://react-amazon-clone-flame.vercel.app/",
+    github: "https://github.com/Nayemcqu/react-amazon-clone",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Weather App",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+      "A full-featured Weather App Where you get the current  weather  details based on the location and also get the forecast of the following day.users can also search any location weather.",
+    image: "/projects/Project2.JPG",
+    tags: ["React js", "Open-Weather", "React-Query", "Tailwind"],
+    link: "https://react-weather-app-sigma-umber.vercel.app/",
+    github: "https://github.com/Nayemcqu/React-Weather-App",
   },
   {
     title: "AI Writing Assistant",
@@ -71,11 +71,11 @@ style={{
 <div className="absoulute inset-0 bg-gradient-to-b from-card via-card/50 opacity-50 "/>
 {/* overlay links */}
 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
- <a href="" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground 
+ <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground 
  transition-all ">
     <ArrowUpRight className="w-5 h-5"/>
     </a>   
-    <a href="" className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground 
+    <a href={project.github} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground 
  transition-all ">
         <Github className="w-5 h-5"/>
     </a>

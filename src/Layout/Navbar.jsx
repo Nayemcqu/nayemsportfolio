@@ -62,7 +62,7 @@ setIsMobileMenuOpen((prev)=>{
 {/* Mobile Menu Button */}
 
 <button className="md:hidden flex p-2 text-foreground cursor-pointer" onClick={onClickHandler}>
-{isMobileMenuOpen ? <X/> : <Menu size={24}/>}
+{isMobileMenuOpen ? <X classname="hover:bg-zinc-100"/> : <Menu size={24}/>}
 </button>
 
 </nav>
