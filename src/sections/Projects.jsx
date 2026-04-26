@@ -20,13 +20,13 @@ const projects=[{
     github: "https://github.com/Nayemcqu/React-Weather-App",
   },
   {
-    title: "AI Writing Assistant",
+    title: "React Spotify Clone",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+      "Spotify clone with Audio Playlist where we can see albums and play demo Songs..",
+    image: "/projects/project3.JPG",
+    tags: ["React", "React Router", "Swiper", "Tailwind"],
+    link: "https://react-spotify-clone-sooty.vercel.app/",
+    github: "https://github.com/Nayemcqu/react-spotify-clone",
   },
   {
     title: "Project Management Tool",
