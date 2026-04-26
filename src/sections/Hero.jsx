@@ -71,7 +71,16 @@ make visually appealing with tailwind.js.
 
 {/*CTAs section */}
 <div className="flex items-center space-x-4 animate-fade-in animation-delay-300">
-<Button size="lg" className="cursor-pointer">Contact Me <ArrowRight className="w-5 h-5 m-2"/><a href="#contact"></a></Button>
+<Button
+  size="lg"
+  asChild
+  className="cursor-pointer"
+>
+  <a href="#contact" className="flex items-center">
+    Contact Me
+    <ArrowRight className="w-5 h-5 ml-2"/>
+  </a>
+</Button>
 <button className="flex gap-2 border rounded-full border-green-300 py-4 px-4 cursor-pointer text-xl text-foreground">
 Download CV <Download className="ml-2"/>    
 </button>
