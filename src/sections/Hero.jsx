@@ -83,7 +83,7 @@ make visually appealing with tailwind.js.
 </Button>
 
 <a
-  href="/cv.pdf"
+  href="public/cv.pdf"
   download
   className="flex gap-2 border rounded-full border-green-300 py-4 px-4 cursor-pointer text-xl text-foreground items-center"
 >
