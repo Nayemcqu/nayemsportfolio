@@ -20,7 +20,7 @@ const projects=[
     "Stripe",
     "Cloudinary",
   ],
-  link: "",
+  link: "https://shopnest-ecom-mern-c4on.onrender.com/",
   github: "https://github.com/Nayemcqu/ShopNest--Ecom-MERN",
 },
 
