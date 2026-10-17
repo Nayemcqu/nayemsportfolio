@@ -3,7 +3,6 @@ export default function Footer(){
 const navLinks=[
    {href:"#About",label:"About"},
    {href:"#projects",label:"Projects"},
-   {href:"#testimonials",label:"testimonials"},
     {href:"#experience",label:"experience"},
      
 ]

@@ -3,35 +3,41 @@ import { Indent } from "lucide-react";
 export function Experience(){
 
 const experiences = [
-{
-    period: "2025 — 2026",
-    topic: "React",
-    description:
-      "Then comes the framework which helps us to create scalable and clean application and i choose react over anything."
-  ,current:true,
-    },
 
 {
+    period: "2026 — Present",
+    topic: "Full-Stack Development",
+    description:
+      "Building practical full-stack applications using React, Next.js, Node.js, Express, and MongoDB. Working with REST APIs, authentication, database integration, and Stripe payments while developing projects like ShopNest.",
+    current: true,
+  },
+  {
     period: "2025 — 2026",
-    topic: "data structures and algorithms",
+    topic: "React & Next.js",
     description:
-      "i have then learned data structures and algorithms so that i can use them into my apllication functionaly.",
-  current:false,
-  },
-
-  {
-    period: "2024 — 2025",
-    topic: "advance javaScript and tailwind css",
-    description:
-      "After that i have dig into javaScript and tailwind css so that i can add dynamics into my websites.",
-  current:false,
+      "Learned to build interactive, component-based web applications using React and Next.js. Explored reusable components, state management, routing, and responsive UI development with Tailwind CSS.",
+    current: false,
   },
   {
-    period: "2024 — 2025",
-    topic: "html and css",
+    period: "2025 — 2026",
+    topic: "Data Structures & Algorithms",
     description:
-      "first technologies that i have learned are html and css before javascript.i started designing sites with no functionaly.",
-  current:false,
+      "Developed problem-solving skills by studying data structures, algorithms, and core programming concepts to write more efficient and maintainable code.",
+    current: false,
+  },
+  {
+    period: "2024 — 2025",
+    topic: "JavaScript & Tailwind CSS",
+    description:
+      "Built a strong foundation in JavaScript and learned to create dynamic, interactive, and responsive interfaces using modern CSS techniques and Tailwind CSS.",
+    current: false,
+  },
+  {
+    period: "2024 — 2025",
+    topic: "HTML & CSS",
+    description:
+      "Started my web development journey by learning HTML and CSS, creating page layouts, styling web interfaces, and understanding the fundamentals of responsive design.",
+    current: false,
   },
 ];
 

@@ -5,7 +5,7 @@ import {useState} from 'react'
 
 export function Hero(){
 
-const skills=["React","Javascript","TypeScript","TailwindCss", "MongoDb","vercel","Git"];
+const skills=["React","nodejs","nextjs","Javascript","TypeScript","TailwindCss", "MongoDb","postgresql","Redis","Stripe","vercel","Git"];
   const [dots] = useState(() =>
     Array.from({ length: 30 }, (_, i) => ({
       id: i,
@@ -52,19 +52,24 @@ const skills=["React","Javascript","TypeScript","TailwindCss", "MongoDb","vercel
 <div className="space-y-8  md:w-1/2">
 <div className="animate-fade-in animation-dealy-100">
     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
- <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/>SoftWare Engineer ***React Developer***  
+ <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/>SoftWare Engineer ***Full-Stack Developer***  
 </span>
 </div>
 
 {/*Headline */}
 <div  className="space-y-4">
 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-200">
-    Making <br/> ideas into <br/> <span className="font-serif italic font-normal text-white">Reality</span>
+  Turning <br />
+  ideas into <br />
+  <span className="font-serif italic font-normal text-white">
+    Reality.
+  </span>
 </h1>
 <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-I am Nayem Khan, a front End Developer specialized in React, 
-javaScript and TypeSscript. I love making optimized websites with the power of React and 
-make visually appealing with tailwind.js.
+I’m Nayem Khan, a Full-Stack Developer specializing in React, Next.js,
+ Node.js, JavaScript, and TypeScript. I enjoy building fast, scalable, and user-friendly 
+ web applications, combining efficient code with visually appealing, responsive interfaces using Tailwind CSS. I’m passionate about 
+creating seamless digital experiences and writing clean, maintainable code.
 
 </p>
 </div>
@@ -83,7 +88,7 @@ make visually appealing with tailwind.js.
 </Button>
 
 <a
-  href="public/cv.pdf"
+  href="/cv_main.pdf"
   download
   className="flex gap-2 border rounded-full border-green-300 py-4 px-4 cursor-pointer text-xl text-foreground items-center"
 >
@@ -97,7 +102,7 @@ make visually appealing with tailwind.js.
 <div className="flex items-center gap-4 animate-fade-in animation-delay-400"> 
 <span className="text-muted-foreground text-sm">Follow me:</span>
 {[{icon:Github,href:"https://github.com/Nayemcqu"},
-   {icon:Linkedin,href:"#"} 
+   {icon:Linkedin,href:"https://www.linkedin.com/in/nayemsportfolio/"} 
 ].map((social,indx)=>(
    <a className="p-2 rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300" key={indx} href={social.href}>
     {<social.icon className="w-5 h-5"/>}</a> 

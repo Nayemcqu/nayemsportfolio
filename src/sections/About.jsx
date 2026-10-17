@@ -3,29 +3,32 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 export function About(){
 
 const highlights=[
-    {
-        icon: Code2,
-        title:"clean code",
-        description:" Writting maintainable, scalable code that stands the test of time",
 
-    },
-    {
-    icon: Rocket,
-    title: "Performance",
-    description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
-  },
-  {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "Staying ahead with the latest technologies and best practices.",
-  },
+{
+  icon: Code2,
+  title: "Clean Code",
+  description:
+    "Writing clean, maintainable, and reusable code to build reliable and scalable applications.",
+},
+{
+  icon: Rocket,
+  title: "Performance",
+  description:
+    "Building fast, responsive, and optimized web applications for a smooth user experience.",
+},
+{
+  icon: Users,
+  title: "Collaboration",
+  description:
+    "Turning ideas into practical solutions through clear communication, feedback, and teamwork.",
+},
+{
+  icon: Lightbulb,
+  title: "Continuous Learning",
+  description:
+    "Exploring new technologies and improving my skills to build better, more effective software.",
+},
+
 ]
 
 
@@ -39,29 +42,37 @@ const highlights=[
     
 <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase"> About Me</span>
 </div>
+
 <h2 className="text-4xl md:text-5xl font-bold animate-fade-in animation-delay-100 text-secondary-foreground leading-tight">
-    Building the future,
-    <span className="text-foreground font-serif italic font-normal ">one component at a time.</span>
+  From frontend to backend,
+  <span className="text-foreground font-serif italic font-normal">
+    {" "}building with purpose.
+  </span>
 </h2>
+
 <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
-    <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
-              </p>
-              <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
-              </p>
-              <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
-              </p>
+   
+<p>
+  I'm Nayem Khan, a passionate full-stack developer who enjoys
+  building modern, responsive, and user-friendly web applications.
+  I work with technologies like React, Next.js, Node.js, JavaScript,
+  and TypeScript to turn ideas into practical digital experiences.
+</p>
+
+<p>
+  I enjoy developing everything from interactive frontend
+  interfaces to full-stack applications with REST APIs,
+  database integration, authentication, and payment processing.
+  I focus on writing clean, maintainable code and creating
+  visually appealing interfaces with Tailwind CSS.
+</p>
+
+<p>
+  When I'm not coding, I'm exploring new technologies,
+  improving my development skills, and building projects
+  that challenge me to become a better software engineer.
+</p>
+
 </div>
 
 <div className="glass rounded-2xl p-6 animate-fade-in animation-delay-300">

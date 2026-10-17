@@ -1,7 +1,48 @@
 import { ArrowUpRight, Github } from "lucide-react";
 
 export function Projects(){
-const projects=[{
+const projects=[
+  
+
+{
+  title: "ShopNest — MERN E-Commerce Platform",
+  description:
+    "A full-stack e-commerce application featuring product browsing, shopping cart management, user authentication, admin product management, order processing, and Stripe checkout payments.",
+  image: "/projects/project5.png",
+  tags: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Redux Toolkit",
+    "JWT",
+    "Redis",
+    "Stripe",
+    "Cloudinary",
+  ],
+  link: "",
+  github: "https://github.com/Nayemcqu/ShopNest--Ecom-MERN",
+},
+
+{
+  title: "YC Directory",
+  description:
+    "A startup discovery and pitching platform where entrepreneurs can showcase startup ideas and explore startup pitches, built with Next.js, TypeScript, Sanity CMS, and GitHub authentication.",
+  image: "/projects/project6.png",
+  tags: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Sanity CMS",
+    "Auth.js",
+  ],
+  link: "https://yc-directory-five-chi.vercel.app",
+  github: "https://github.com/Nayemcqu/yc_directory",
+},
+
+
+  ,{
      title: "Amazon Clone",
     description:
       "A Clone of The Amazon Website.Which shows Product List, Cart,Checkout and the HomePage.",
@@ -28,15 +69,7 @@ const projects=[{
     link: "https://react-spotify-clone-sooty.vercel.app/",
     github: "https://github.com/Nayemcqu/react-spotify-clone",
   },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
-  },
+ 
 ];
 
     return (
